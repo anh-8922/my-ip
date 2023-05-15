@@ -19,13 +19,9 @@ export default function CountryData(props) {
         <p>Country Code: {data.country_code2}</p>
         <p>Calling Code: {data.calling_code}</p>
         <p>Zip Code: {data.zipcode}</p>
-        <p>Currency: 
-            <br/>
-            Name: {data.currency.name} 
-            <br/> 
-            Currency Code: {data.currency.code} 
-            <br/>
-            Currency Symbol: {data.currency.symbol} </p>
+        <p>Currency Name: {data.currency.name}</p>
+        <p>Currency Code: {data.currency.code} </p>
+        <p>Currency Symbol: {data.currency.symbol} </p>
     </div>
     
   );
