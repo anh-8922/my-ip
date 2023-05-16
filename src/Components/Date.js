@@ -18,10 +18,10 @@ export default function DateAndTime(props) {
   <div>
    
     <p>Local Date: {DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</p>
-    <p>Local Time: {DateTime.now().toFormat("HH ':' mm ",data.time_zone.current_time)} hrs </p>  
+    <p>Local Time: {DateTime.now().toFormat("HH:mm ",data.time_zone.current_time)}</p>  
     {/* we can use any time format 24hr or 12 hrs*/}
     <p>Local Time: {DateTime.now().toLocaleString(DateTime.TIME_SIMPLE)}</p>
-    <p>GMT Time: {currentGMTTime.toFormat("HH:mm")} hrs</p>
+    <p>GMT Time: {currentGMTTime.toFormat("HH:mm")}</p>
     <p>Time Zone Name: {data.time_zone.name}</p>
     <p>Time Zone: {data.time_zone.offset}</p>
   </div>
