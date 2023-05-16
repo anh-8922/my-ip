@@ -15,7 +15,7 @@ export default function Map() {
   useEffect(() => {
     if (data) {
       setCenter({ lat: data.latitude, lng: data.longitude });
-      setZoom(13); 
+      setZoom(10); 
     }
   }, [data]);
 
