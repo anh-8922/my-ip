@@ -9,7 +9,7 @@ import Login from "./Components/login";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Components/css/styles.css';
 import map from './Components/map.jpg';
-
+import CheckZone from "./Components/checkzone";
 function App() {
   return (
     <div id="main" style={{ backgroundImage: `url(${map})`, backgroundSize: "cover"}}>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="checkip" element={<Home/>}/>
-           
+            <Route path="checkzone" element={<CheckZone/>}/>
             <Route path="/user/:name" />
           </Route>
         </Routes>

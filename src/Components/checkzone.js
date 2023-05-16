@@ -1,17 +1,18 @@
 import React from 'react';
-import IpAddress from './IpAddress';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Map from './Map';
-
 import './css/styles.css';
-export default function Home() {
+import Card from 'react-bootstrap/Card';
+import CountryFlag from './CountryFlag.js';
+import CountryData from './Country';
+import DateAndTime from './Date';
+
+
+export default function CheckZone() {
     return(
         <section id="home" >
             <Card id='map'>
                 <Card.Header as="h5">Get Map</Card.Header>
                 <Card.Body>
-                    <Map/>
+                    <CountryFlag/><DateAndTime/>
                 </Card.Body>
             </Card>
             <Card className="text-center" bg={"white"}>
@@ -19,7 +20,7 @@ export default function Home() {
                 <Card.Body>
                     <Card.Title>Your IP Address is:</Card.Title>
                     <Card.Text>
-                        <IpAddress/>
+                        <CountryData/>
                     </Card.Text>
                     
                 </Card.Body>
@@ -27,6 +28,5 @@ export default function Home() {
             </Card>
           
         </section>
-        
     )
 }
