@@ -19,7 +19,7 @@ export default function CheckZone() {
             <div className="paper">
                 <div className="lines">
                     <div className="country-data" contenteditable spellcheck="false">
-                        You can edit this text! <br /><br />
+                        {/* You can edit this text! <br /><br /> */}
                         <CountryFlag/><br/>
                         
                         Country: {data.country_name}<br />
