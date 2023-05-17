@@ -1,4 +1,6 @@
 import useFetch from "../CustomHooks/useFetch";
+import '.css/styles.css';
+
 
 export default function CountryData(props) {
 
