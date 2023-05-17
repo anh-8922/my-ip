@@ -3,37 +3,36 @@ import GoogleMapReact from 'google-map-react'
 import LocationPin from './Location'
 import useFetch from '../CustomHooks/useFetch';
 import './css/styles.css';
+import { useState, useEffect } from 'react';
 
-export default function Map(){
+export default function Map() {
+  const myMap = process.env.REACT_APP_MY_MAP;
+  const myAPI = process.env.REACT_APP_MY_API;
 
-  const myMap = process.env.REACT_APP_MY_MAP
-  const myAPI = process.env.REACT_APP_MY_API
-  const defaultProps = {
-    center: {
-      lat: 51.4934,
-      lng: 0.0098
-    },
-    zoom: 8
-  };
+  const [center, setCenter] = useState({ lat: 51.4934, lng: 0.0098 });
+  const [zoom, setZoom] = useState(1);
+  const { data } = useFetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${myAPI}`);
+  
 
-  const{data} = useFetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${myAPI}`)
+  useEffect(() => {
+    if (data) {
+      setCenter({ lat: data.latitude, lng: data.longitude });
+      setZoom(8); 
+    }
+  }, [data]);
+
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
-
-    <div style={{ height: '15rem', width: '95%' }}>
+    <div style={{ height: '50vh', width: '100%' }}>
       <GoogleMapReact id='locate-map'
         bootstrapURLKeys={{ key: myMap }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
+        center={center}
+        zoom={zoom}
       >
-        <LocationPin id="locate-pin"
-          lat={data.latitude}
-          lng={data.longitude}
-          text='You are here'
-        />
+        <LocationPin lat={data.latitude} lng={data.longitude} text="You are here" />
       </GoogleMapReact>
     </div>
   );

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Mitr', sans-serif;
     
 }
 :root {
@@ -120,7 +120,7 @@ nav {
     flex-direction: column;
     
     align-items: flex-start;
-    padding: 7rem 0 0 20rem;
+    padding: 0.5rem 0 0 15rem;
     
 }
 
@@ -140,7 +140,8 @@ nav {
 }
 
 .pin-text {
-    font-size: 3rem;
+    font-size: 2rem;
+    width: 20rem;
 }
 
 #locate-pin {
@@ -158,18 +159,16 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
     align-items: flex-start;
-    padding: 5rem 0 0 20rem;
+    
+    padding: 0.5rem 0 0 15rem;
 }
 .paper {
     position: absolute;
-    height: 35rem;
-    width: 450px;
+    height: 30rem;
+    width: 25rem;
     background: rgba(255,255,255,0.9);
-    margin: -275px -225px;
-    left: 50%;
-    top: 50%;
+    top: 17%;
     box-shadow: 0px 0px 5px 0px #888;
     
   }
@@ -217,3 +216,22 @@ nav {
   .hole-bottom {
     bottom: 10%;
   }
+
+  .country-data {
+    font-family: 'Mitr', sans-serif;
+    padding: 0 0 0 4rem;
+   
+  }
+
+  #logo {
+    -webkit-text-stroke-width: 2.9px;
+    -webkit-text-stroke-color: #210a0a;
+    -webkit-text-fill-color: #d0a772;
+    text-shadow: 4px 4px 0px #A3A3A3;
+    letter-spacing: 1px;
+  }
+ #logo > span {
+    color:#3D341F;
+    font-size: 4rem;
+
+ }

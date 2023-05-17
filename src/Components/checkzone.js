@@ -3,7 +3,7 @@ import './css/styles.css';
 import Card from 'react-bootstrap/Card';
 import CountryFlag from './CountryFlag.js';
 //import CountryData from './Country';
-import DateAndTime from './Date';
+import Logo from './logo';
 import useFetch from "../CustomHooks/useFetch";
 
 
@@ -17,9 +17,10 @@ export default function CheckZone() {
   }
     return(
         <section id="zone" >
-            <div class="paper">
-                <div class="lines">
-                    <div class="text" contenteditable spellcheck="false">
+            <Logo/>
+            <div className="paper">
+                <div className="lines">
+                    <div className="country-data" contenteditable spellcheck="false">
                         You can edit this text! <br /><br />
                         <CountryFlag/><br/>
                         
