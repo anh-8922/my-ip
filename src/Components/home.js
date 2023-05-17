@@ -8,6 +8,7 @@ import './css/styles.css';
 export default function Home() {
     return(
         <section id="home" >
+            <div>LOGO</div>
             <Card id='map'>
                 <Card.Header as="h5">Get Map</Card.Header>
                 <Card.Body>

@@ -15,14 +15,20 @@ export default function DateAndTime(props) {
 
   return (
   <div>
-   
-    <p>Local Date: {DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</p>
-    <p>Local Time: {DateTime.now().toFormat("HH ':' mm ",data.time_zone.current_time)} hrs </p>  
+    <div id="local-time">{DateTime.now().toFormat("HH':'mm ",data.time_zone.current_time)}</div>
+    <div id="local-date">{DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</div>
+    {/*<p>Local Date: {DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</p>*/}
+    {/*<p>Local Time: {DateTime.now().toFormat("HH ':' mm ",data.time_zone.current_time)} </p>*/}  
     {/* we can use any time format 24hr or 12 hrs*/}
-    <p>Local Time: {DateTime.now().toLocaleString(DateTime.TIME_SIMPLE)}</p>
-    <p>GMT Time: {currentGMTTime.toFormat("HH:mm")} hrs</p>
-    <p>Time Zone Name: {data.time_zone.name}</p>
-    <p>Time Zone: {data.time_zone.offset}</p>
+    {/*<p>Local Time: {DateTime.now().toLocaleString(DateTime.TIME_SIMPLE)}</p>*/}
+    <div id="gmt-zone">
+      GMT Time: {currentGMTTime.toFormat("HH:mm")}<br/>
+      Time Zone Name: {data.time_zone.name}<br/>
+      Time Zone: {data.time_zone.offset}
+    </div>
+    {/*<p>GMT Time: {currentGMTTime.toFormat("HH:mm")}</p>*/}
+    {/*<p>Time Zone Name: {data.time_zone.name}</p>*/}
+    {/*<p>Time Zone: {data.time_zone.offset}</p>*/}
   </div>
     
   );
