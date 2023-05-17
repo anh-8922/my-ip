@@ -13,7 +13,7 @@ const LocationPin = ({ text }) => (
         transformOrigin: 'center center'
       }}
     >
-      <MdLocationPin className="pin-icon"  style={{ height: '100%', position:'relative'}} />
+      <MdLocationPin className="pin-icon"  style={{ height: '100%', position:'relative', fontSize:'2rem', color:'red'}} />
       {text}
     </p>
   </div>
