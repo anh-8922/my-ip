@@ -9,11 +9,11 @@ import CountryData from './Components/Country';
 function App() {
   return (
     <div className="App">
-      <Map/>
+      {/* <Map/>
       <IpAddress/>
       <DateAndTime />
       <CountryFlag/>
-      <CountryData/>
+      <CountryData/> */}
     </div>
   );
 }
