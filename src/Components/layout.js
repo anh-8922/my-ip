@@ -23,30 +23,17 @@ export default function Layout() {
         <>
             <nav className={slide ? 'side-bar' : 'side-bar-XL'}>
                 <Link activeClassName="active" id='menu'><AiOutlineMenuUnfold className="icons" onClick = {() => setSlide(!slide)} /></Link>
-                <div id="nav-bar">
-                    
-                    
-                    
-                    <Link to="/" activeClassName="active" className='nav-items'><AiTwotoneHome className="icons"/>{slide?"":<p className='items-extended'>Home</p>}</Link>
-                    
-                   
-                    <Link to="checkip" activeClassName="active" className='nav-items'><ImLocation2 className="icons"/>{slide?"":<p className='items-extended'>What's my IP?</p>}</Link>
-                    <Link to="checkzone" activeClassName="active" className="nav-items"><AiOutlineGlobal className="icons"/>{slide?"":<p className='items-extended'>Check Zone</p>}</Link>
-                
-                    
-                    
-                    
+                <div id="nav-bar">                                         
+                    <Link to="/" activeClassName="active" className='nav-items'><AiTwotoneHome className="icons"/>{slide?"":<p className='items-extended'>HOME</p>}</Link>                                    
+                    <Link to="checkip" activeClassName="active" className='nav-items'><ImLocation2 className="icons"/>{slide?"":<p className='items-extended'>LOCATION</p>}</Link>
+                    <Link to="checkzone" activeClassName="active" className="nav-items"><AiOutlineGlobal className="icons"/>{slide?"":<p className='items-extended'>COUNTRY</p>}</Link>                                                                         
                 </div>
-                
             </nav>
-            
             <Outlet />
-            
             <div className="local-time">
-                <Card border="danger" style={{ width: '15rem' }}>
-                    
-                    <Card.Body>
-                        <Card.Title style={{ height: '1rem' }}>Local Time & Date</Card.Title>
+                <Card style={{ width: '15rem' }}>
+                    <Card.Body style={{backgroundColor: "#CE7957"}}>
+                        <Card.Title style={{ height: '1rem', color: "#fcfcfc" }}>Local Time & Date</Card.Title>
                         <Card.Text>
                             <DateAndTime/>
                         </Card.Text>
@@ -56,13 +43,9 @@ export default function Layout() {
             <div id="right-tool">
                 <Contact/>
                 <a href="https://github.com/anh-8922/my-ip" target="_blank"><BsGithub className="tool-items"/></a>
-                
                 <Info/>
-                <Link><BsFillShareFill className="tool-items" /> </Link>
-                
-            </div>
-            
+                <Link><BsFillShareFill className="tool-items" /> </Link>  
+            </div> 
         </>
       )
-
 }

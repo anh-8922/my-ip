@@ -29,14 +29,14 @@
     border-radius: 1rem;
     border-style: outset;
     position: fixed;
-    transition: 1000ms ease;
+    transition: 800ms ease;
     
 }
 .side-bar-XL {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 18%;
+    width: 15%;
     height:50vh;
     background-color: var(--light-background);
     padding: 1rem;
@@ -44,7 +44,7 @@
     border-radius: 1rem;
     border-style: outset;
     position: fixed;
-    transition: 1000ms ease;
+    transition: 800ms ease;
 }
 nav {
     text-align: left;
@@ -60,7 +60,9 @@ nav {
 }
 .items-extended {
     color: var(--dark-sienna);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding-left: 0.7rem;
+    font-weight: 300;
 }
 .nav-items {
     display: flex;
@@ -69,7 +71,8 @@ nav {
 }
 
 .icons {
-    color: var(--dark-sienna)
+    color: var(--dark-sienna);
+    font-size: 2rem
 }
 
 /*Right bar ==>*/
