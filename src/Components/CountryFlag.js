@@ -1,3 +1,4 @@
+
 import useFetch from "../CustomHooks/useFetch";
 
 export default function CountryFlag(props) {
@@ -14,4 +15,6 @@ export default function CountryFlag(props) {
   <img src={data.country_flag} alt='Country Flag'/>
     
   );
+
 }
+

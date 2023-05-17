@@ -1,3 +1,4 @@
+
 import useFetch from "../CustomHooks/useFetch";
 const { DateTime } = require('luxon');
 
@@ -29,9 +30,11 @@ export default function DateAndTime(props) {
     {/*<p>GMT Time: {currentGMTTime.toFormat("HH:mm")}</p>*/}
     {/*<p>Time Zone Name: {data.time_zone.name}</p>*/}
     {/*<p>Time Zone: {data.time_zone.offset}</p>*/}
+
   </div>
     
   );
 }
+
 
 

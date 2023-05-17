@@ -10,11 +10,13 @@ const LocationPin = ({ text }) => (
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
+
         transformOrigin: 'center center',
         color: "#924946",
       }}
     >
       <MdLocationPin className="pin-icon"  style={{ height: '100%', position:'relative'}} /><br/>
+
       {text}
     </p>
   </div>

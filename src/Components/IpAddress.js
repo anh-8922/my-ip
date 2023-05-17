@@ -1,3 +1,4 @@
+
 import useFetch from "../CustomHooks/useFetch";
 
 export default function IpAddress(props) {
@@ -11,7 +12,9 @@ export default function IpAddress(props) {
 
   return (
     <div>
+
       IPv4: {data.ip}
     </div>
   );
 }
+
