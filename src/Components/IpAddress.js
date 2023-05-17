@@ -1,5 +1,3 @@
-
-
 import useFetch from "../CustomHooks/useFetch";
 
 export default function IpAddress(props) {

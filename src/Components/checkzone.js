@@ -1,8 +1,6 @@
 import React from 'react';
 import './css/styles.css';
-import Card from 'react-bootstrap/Card';
 import CountryFlag from './CountryFlag.js';
-//import CountryData from './Country';
 import Logo from './logo';
 import useFetch from "../CustomHooks/useFetch";
 
