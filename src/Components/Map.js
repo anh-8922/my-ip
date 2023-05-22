@@ -24,7 +24,7 @@ export default function Map() {
       setZoom(8); 
 
     }
-  }, [data]);
+  }, []);
 
   if (!data) {
     return <div>Loading...</div>;
