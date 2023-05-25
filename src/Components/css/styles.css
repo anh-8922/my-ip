@@ -85,3 +85,8 @@
     font-size: 4rem;
 
  }
+
+ #country-data {
+    display: flex;
+    flex-direction: row;
+ }

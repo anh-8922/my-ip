@@ -10,12 +10,9 @@ export default function CheckZone() {
     return(
         <Layout>
             <div id="zone">
-                <Card id='zone-card' style={{ width: '40rem' }}>
-                    <div><CountryFlag/></div>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                      
-                    </Card.Body>
+                <Card  style={{ width: '35rem' }}>
+                    
+                    
                     <CountryData/>
                 </Card>
             

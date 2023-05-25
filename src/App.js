@@ -12,10 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route path="checkip" element={<Home/>}/>
-          <Route path="checkzone" element={<CheckZone/>}/>
-          <Route path="/user/:name" />
-          
+          <Route path="/checkip" element={<Home/>}/>
+          <Route path="/checkzone" element={<CheckZone/>}/> 
+              
         </Routes>
       </BrowserRouter>    
     </div>
