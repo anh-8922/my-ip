@@ -2,23 +2,20 @@
 //import './App.css';
 //import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Components/layout";
-import Home from "./Components/home";
+import Home from "./pages/home";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Components/css/styles.css';
 import map from './Components/map.jpg';
-import CheckZone from "./Components/checkzone";
+import CheckZone from "./pages/checkzone";
 function App() {
   return (
-    <div id="main" style={{ backgroundImage: `url(${map})`, backgroundSize: "cover"}}>
+    <div style={{ backgroundImage: `url(${map})`, backgroundSize: "cover"}}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="checkip" element={<Home/>}/>
-            <Route path="checkzone" element={<CheckZone/>}/>
-            <Route path="/user/:name" />
-          </Route>
+          <Route exact path="/" element={<Home />}/>
+          <Route path="checkip" element={<Home/>}/>
+          <Route path="checkzone" element={<CheckZone/>}/>
+          <Route path="/user/:name" />
+          
         </Routes>
       </BrowserRouter>    
     </div>

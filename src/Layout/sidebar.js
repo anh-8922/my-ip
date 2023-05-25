@@ -1,21 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
-import './css/styles.css';
+import './layoutstyle.css';
 import {AiTwotoneHome} from 'react-icons/ai/';
 import {ImLocation2} from 'react-icons/im';
 import{AiOutlineMenuUnfold} from 'react-icons/ai';
-import {BsGithub} from 'react-icons/bs';
-import {BsFillShareFill} from 'react-icons/bs';
 import React, { useState } from "react";
-import Info from "./rightBar/info";
-import Contact from "./rightBar/contact";
 import {AiOutlineGlobal} from 'react-icons/ai';
 import Card from 'react-bootstrap/Card';
-import DateAndTime from "./Date";
+import DateAndTime from "../Components/Date";
 
-export default function Layout() {
-   
-    //const [click, setClick] = useState(false);
-
+export default function Sidebar() {
     const [slide, setSlide] = useState(true);
 
 
@@ -30,22 +23,8 @@ export default function Layout() {
                 </div>
             </nav>
             <Outlet />
-            <div className="local-time">
-                <Card style={{ width: '15rem' }}>
-                    <Card.Body style={{backgroundColor: "#CE7957"}}>
-                        <Card.Title style={{ height: '1rem', color: "#fcfcfc" }}>Local Time & Date</Card.Title>
-                        <Card.Text>
-                            <DateAndTime/>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </div>
-            <div id="right-tool">
-                <Contact/>
-                <a href="https://github.com/anh-8922/my-ip" target="_blank"><BsGithub className="tool-items"/></a>
-                <Info/>
-                <Link><BsFillShareFill className="tool-items" /> </Link>  
-            </div> 
+            
         </>
       )
+
 }
