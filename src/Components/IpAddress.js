@@ -11,7 +11,10 @@ export default function IpAddress(props) {
   }
 
   return (
-    <div>
+    <div style={{
+      fontFamily: "Trebuchet MS",
+      fontWeight: "800",
+      }}>
 
       IPv4: {data.ip}
     </div>

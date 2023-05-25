@@ -1,6 +1,8 @@
 import useFetch from "../CustomHooks/useFetch";
-import '.css/styles.css';
-
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import CountryFlag from "./CountryFlag";
+import "./css/styles.css";
 
 export default function CountryData(props) {
 
@@ -14,16 +16,25 @@ export default function CountryData(props) {
 
   return (
     <div>
-        <p>Country: {data.country_name}</p>
-        <p>Capital City: {data.country_capital}</p>
-        <p>City: {data.city}</p>
-        <p>Continent: {data.continent_code}</p>
-        <p>Country Code: {data.country_code2}</p>
-        <p>Calling Code: {data.calling_code}</p>
-        <p>Zip Code: {data.zipcode}</p>
-        <p>Currency Name: {data.currency.name}</p>
-        <p>Currency Code: {data.currency.code} </p>
-        <p>Currency Symbol: {data.currency.symbol} </p>
+      <Card id="country-data" style={{ width: 'fit-content' }}>        
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>Capital City: {data.country_capital}</ListGroup.Item>
+              <ListGroup.Item>City: {data.city}</ListGroup.Item>
+              <ListGroup.Item>Continent: {data.continent_code}</ListGroup.Item>
+              <ListGroup.Item>Country Code: {data.country_code2}</ListGroup.Item>
+              <ListGroup.Item>Zip Code: {data.zipcode}</ListGroup.Item>
+              <ListGroup.Item>Currency Name: {data.currency.name}</ListGroup.Item>
+              <ListGroup.Item>Currency Code: {data.currency.code}</ListGroup.Item>
+              <ListGroup.Item>Currency Symbol: {data.currency.symbol}</ListGroup.Item>
+            </ListGroup>
+            <div>
+              <CountryFlag/>
+              <div>{data.country_name}</div>
+              <div>Calling Code: {data.calling_code}</div>
+            </div>
+      
+      </Card>
+        
     </div>
     
   );
