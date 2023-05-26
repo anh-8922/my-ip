@@ -9,7 +9,7 @@ export default function Layout({children}) {
     return (
         <div id='main'>
             <Sidebar/>
-            <div>
+            <div style={{marginTop:'2rem'}}>
                 <Logo/>
                 <div id='content'>
                     <div>{children}</div>

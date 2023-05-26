@@ -19,10 +19,10 @@
 }
 
 /*TimeZone ==>*/
-#zone {
+/* #zone {
     width: 100%;
     height: 100vh;
-}
+} */
 #zone-card {
   display: flex;
   flex-direction: row-reverse;
