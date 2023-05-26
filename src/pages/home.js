@@ -11,7 +11,7 @@ export default function Home() {
             
             <Card id='map'>
                 <Card.Header as="h5">Get Map and IP</Card.Header>
-                <Card.Body>
+                <Card.Body >
                     <Map/>
                 </Card.Body>
                 <Card.Footer style={{textAlign: "center", fontSize: "1.5rem", paddingTop: "0"}}>
