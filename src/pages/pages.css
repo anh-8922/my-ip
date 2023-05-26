@@ -4,25 +4,24 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
     align-items: flex-start;
-    padding: 0.5rem 0 0 15rem;
+    justify-content: flex-start;
     
+    
+}
+
+#map {
+  margin: 0;
+  width: auto;
 }
 
 .text-center {
     width: 30rem;
-    height: fit-content;
-    
-    
-    
+    height: fit-content; 
 }
 
 /*TimeZone ==>*/
-/* #zone {
-    width: 100%;
-    height: 100vh;
-} */
+
 #zone-card {
   display: flex;
   flex-direction: row-reverse;

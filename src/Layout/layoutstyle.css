@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
-    
+   
   }
 
 #content {
@@ -12,9 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 3rem;
-    gap:2rem;
-    /* height: '400px'; */
+    margin: 0;
 }
 
 .side-bar {

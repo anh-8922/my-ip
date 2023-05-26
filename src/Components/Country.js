@@ -15,12 +15,12 @@ export default function CountryData(props) {
   }
 
   return (
-    <div style={{ height:'500px', marginTop:'3rem'} }>
+    <div style={{ height:'auto', padding: "0"} }>
       <Card id="country-data" 
-            style={{ width: 'fit-content',  height:'500px', marginLeft:'2rem' }}
+            style={{ width: 'auto',  height:'auto', margin:'2rem' }}
             // style={{ width: '30rem', height:'60vh' }}
             >        
-            <ListGroup className="list-group-flush" style={{padding:'0.7rem', fontSize:'1.2rem', marginBottom:'0'}}>
+            <ListGroup className="list-group-flush" style={{padding:'0.7rem', fontSize:'1.2rem'}}>
               <ListGroup.Item style={{ marginTop:'2rem'}}>Capital City: {data.country_capital}</ListGroup.Item>
               <ListGroup.Item >City: {data.city}</ListGroup.Item>
               <ListGroup.Item >Continent: {data.continent_code}</ListGroup.Item>

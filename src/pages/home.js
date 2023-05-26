@@ -4,11 +4,11 @@ import Card from 'react-bootstrap/Card';
 import Map from '../Components/Map';
 import Layout from '../Layout/layout';
 import './pages.css';
+import '../Components/Mobile/mobilestyle.css';
 
 export default function Home() {
     return(
-        <Layout >
-            
+        <Layout > 
             <Card id='map'>
                 <Card.Header as="h5">Get Map and IP</Card.Header>
                 <Card.Body >
