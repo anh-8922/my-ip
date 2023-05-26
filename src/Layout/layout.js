@@ -11,8 +11,8 @@ export default function Layout({children}) {
             <Sidebar/>
             <div style={{marginTop:'2rem'}}>
                 <Logo/>
-                <div id='content'>
-                    <div>{children}</div>
+                <div id='content' style={{height:'78vh'}}>
+                    <div >{children}</div>
                     <DateAndTime/>
                 </div> 
             </div>
