@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 5%;
-    height: 50vh;
+    height: fit-content;
     background-color: var(--light-background);
     margin: 1rem;
     padding: 1rem;
@@ -37,7 +37,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 15%;
-    height:50vh;
+    height: fit-content;
     background-color: var(--light-background);
     padding: 1rem;
     margin: 1rem;
@@ -52,12 +52,14 @@ nav {
     font-size: 2rem;
     padding-left: 0.7rem;
     display: flex;
+    
 }
 #nav-bar {
-    height: 15rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 .items-extended {
     color: var(--dark-sienna);
