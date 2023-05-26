@@ -53,31 +53,28 @@ export default function Contact() {
                 <Modal.Title>Reach Us</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{display:'flex'}}>
-                    {/* <div>Name: <input value={name} onChange={(e)=>setName(e.target.value)}/></div>
-                    <div>Email: <input value={email} onChange={(e)=>setEmail(e.target.value)}/></div>
-                    <div style={{display:'flex', gap:'5px'}}><p>Message: </p> <textarea value={message} onChange={(e)=>setMessage(e.target.value)}></textarea></div>
-                    <button onClick={handleClick}>Send</button> */}
+               
                     <form ref={form} 
                           onSubmit={sendEmail} 
-                          style={{display:'flex', flexDirection:'column', gap:'2rem', justifyContent:"flex-start", marginLeft:'10rem', marginTop:'2rem'}}>
+                          style={{display:'flex', flexDirection:'column', gap:'2.5rem', justifyContent:"flex-start", marginLeft:'10rem', marginTop:'2rem'}}>
                         <input type="text" 
                                name="name" 
                                placeholder='Name' 
-                               style={{height:'3rem', width:'40vw', padding:'1rem'}} />
+                               style={{height:'3rem', width:'40rem', padding:'1rem'}} />
                         <input type="email" 
                                name="email" 
                                placeholder='Email Address' 
-                               style={{height:'3rem', width:'40vw', padding:'1rem'}}/>
+                               style={{height:'3rem', width:'40rem', padding:'1rem'}}/>
                         <input type="text" 
                                name="subject" 
                                placeholder='Subject' 
-                               style={{height:'3rem', width:'40vw', padding:'1rem'}}/>
+                               style={{height:'3rem', width:'40rem', padding:'1rem'}}/>
                         <textarea name="message" 
                                   placeholder="Your message"  
-                                  style={{height:'15rem', width:'40vw', padding:'1rem'}}/>
+                                  style={{height:'15rem', width:'40rem', padding:'1rem'}}/>
                         <input type="submit" 
                                value="Send Message" 
-                               style={{height:'4rem', width:'15vw', padding:'1rem', fontSize:'1.3rem'}}/>
+                               style={{height:'4rem', width:'15rem', padding:'1rem', fontSize:'1.3rem'}}/>
                     </form>
                 </Modal.Body>
             </Modal>
