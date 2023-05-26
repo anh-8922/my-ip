@@ -9,11 +9,11 @@ import ListGroup from 'react-bootstrap/ListGroup';
 export default function CheckZone() {
     return(
         <Layout>
-            <div id="zone">
-                <Card  style={{ width: '35rem' }}>
+            <div id="zone" style={{ width: '42rem'}}>
+                <Card  style={{ width: '42rem'}}>
                     
                     
-                    <CountryData/>
+                    <CountryData />
                 </Card>
             
                 
