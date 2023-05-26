@@ -11,7 +11,7 @@ export default function RightTool() {
     return (
         <div id="right-tool">
             <Contact/>
-            <a href="https://github.com/anh-8922/my-ip" target="_blank"><BsGithub className="tool-items"/></a>
+            <a  rel="noreferrer" href="https://github.com/anh-8922/my-ip" target="_blank"><BsGithub className="tool-items"/></a>
             <Info/>
             <Link><BsFillShareFill className="tool-items" /> </Link>
         </div>

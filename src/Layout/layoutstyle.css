@@ -101,6 +101,12 @@ nav {
     font-size: 2rem;
 }
 #info-screen {
-    width: 75%;
-    margin-left: 10rem;
+    width: 70%;
+    margin: 10rem 15rem;
+    height: 60%;
+
+}
+
+.tool-items:hover{
+    cursor: pointer;
 }
