@@ -14,7 +14,7 @@ export default function Contact() {
     }
     return (
         <>
-            <BsPersonCircle class='tool-items'  onClick={handleShow}/>
+            <BsPersonCircle className='tool-items'  onClick={handleShow}/>
             <Modal show={show} fullscreen={logContact} onHide={() => setShow(false)} id="info-screen">
                 <Modal.Header closeButton>
                 <Modal.Title>Modal</Modal.Title>
