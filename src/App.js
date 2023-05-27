@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import map from './Components/map.jpg';
 import CheckZone from "./pages/checkzone";
+
 function App() {
   return (
     <div style={{ backgroundImage: `url(${map})`, backgroundSize: "cover"}}>

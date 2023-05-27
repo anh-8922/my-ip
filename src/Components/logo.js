@@ -1,15 +1,12 @@
 import React from "react";
 import {FaSearchLocation} from 'react-icons/fa';
+import './css/styles.css';
+import '../Mobile/mobilestyle.css';
+
 export default function Logo() {
     return(
         <>
-            <p id="logo" 
-            style={{
-                fontFamily: "'Mogra', cursive",
-                fontSize: "3rem",
-                color: "#D0A772",
-                
-            }}>
+            <p id="logo" >
                 just<span><FaSearchLocation/></span>IP</p>
         </>
     )
