@@ -70,7 +70,7 @@ export default function Contact() {
                     </form>
                 </Modal.Body>
             </Modal>
-            {messageStatus && <Modal show={show} 
+            {/* {messageStatus && <Modal show={show} 
                    fullscreen={logContact} 
                    onHide={() => setShow(false)} 
                    id="info-screen" 
@@ -83,7 +83,7 @@ export default function Contact() {
                
                 <div>{messageStatus}</div>
                 </Modal.Body>
-            </Modal>}
+            </Modal>} */}
         </>
     )
 }
