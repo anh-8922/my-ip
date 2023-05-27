@@ -5,7 +5,7 @@ import LocationPin from './Location'
 import useFetch from '../CustomHooks/useFetch';
 import './css/styles.css';
 import { useState, useEffect } from 'react';
-
+import './Mobile/mobilestyle.css';
 
 export default function Map() {
   const myMap = process.env.REACT_APP_MY_MAP;
@@ -32,7 +32,7 @@ export default function Map() {
 
   return (
 
-    <div style={{ height: '50vh', width: '100%' }}>
+    <div id="map-box">
       <GoogleMapReact id='locate-map'
 
         bootstrapURLKeys={{ key: myMap }}

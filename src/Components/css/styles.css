@@ -72,13 +72,16 @@
 }
 
 
-  #logo {
+#logo {
     -webkit-text-stroke-width: 2.9px;
     -webkit-text-stroke-color: #210a0a;
     -webkit-text-fill-color: #d0a772;
     text-shadow: 4px 4px 0px #A3A3A3;
     letter-spacing: 1px;
     margin: 0 0 0.5rem 0.7rem;
+    font-family: 'Mogra', cursive;
+    font-size: 3rem;
+    color: #D0A772
   }
  #logo > span {
     color:#3D341F;
@@ -89,4 +92,10 @@
  #country-data {
     display: flex;
     flex-direction: row;
+    height: fit-content;
+ }
+
+ #map-box {
+    height: 50vh;
+    width: 100%;
  }

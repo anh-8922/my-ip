@@ -8,7 +8,11 @@ import map from './Components/map.jpg';
 import CheckZone from "./pages/checkzone";
 function App() {
   return (
-    <div style={{ backgroundImage: `url(${map})`, backgroundSize: "cover"}}>
+    <div style={{ 
+      backgroundImage: `url(${map})`, 
+      backgroundSize: "cover",
+      paddingBottom: "2rem",
+      }}>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}/>

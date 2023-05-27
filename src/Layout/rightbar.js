@@ -5,7 +5,7 @@ import {BsFillShareFill} from 'react-icons/bs';
 import React from "react";
 import Info from "../Components/rightBar/info";
 import Contact from "../Components/rightBar/contact";
-
+import '../Components/Mobile/mobilestyle.css';
 
 export default function RightTool() {
     return (

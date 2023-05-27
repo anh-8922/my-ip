@@ -13,7 +13,7 @@ export default function CountryFlag(props) {
 
   return (
   <img src={data.country_flag} alt='Country Flag' 
-    style={{width: "7rem", margin: "1rem"}}/>
+    style={{width: "8rem",height:'5rem', margin: "2rem"}}/>
     
   );
 
