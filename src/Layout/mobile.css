@@ -1,0 +1,141 @@
+#top-bar {
+    background-color: #198754;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 10%;
+    width: 100%;
+    padding-left: 1.5rem;
+}
+
+.nav-mobile {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem 2rem 0 2rem;
+}
+.nav-icons {
+    margin-right: 0.5rem;
+}
+.mobile-time {
+  background-color: whitesmoke;
+  width: 70%;
+  border-radius: 1rem;
+  margin: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 5px solid beige;
+  border-style: inset;
+  padding: 0.3rem;
+}
+
+#time-info {
+    font-size: 0.8rem;
+}
+#time {
+    margin: 0;
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+
+@media only screen and (max-width:786px) {
+    #main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #logolayout {
+        display: none;
+    }
+    #logo {
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #210a0a;
+        -webkit-text-fill-color: #d0a772;
+        text-shadow: 2px 2px 0px whitesmoke;
+        letter-spacing: 1px;
+        margin: 0 0 0.5rem 0.7rem;
+        font-family: 'Mogra', cursive;
+        font-size: 2rem;
+        color: #D0A772
+    }
+    #logo span {
+        font-size: 2rem;
+    }
+    #content {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    #right-tool {
+        background-color: var(--green-bar);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        justify-content: space-around;
+        padding: 1rem 0 1rem 0;
+        
+        box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    #map-box {
+        height: 80vh;
+        width: 100%;
+     }
+    
+ 
+   
+}
+
+@media only screen and (max-width:584px) {
+    #logo {
+        font-size: 1.8rem;
+    }
+    .nav-mobile {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:536px) {
+    #logo {
+        font-size: 1.7rem;
+    }
+    .nav-mobile {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.3rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width:443px) {
+    #logo {
+        font-size: 1.6rem;
+    }
+    .nav-mobile {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    #logo {
+        font-size: 1.2rem;
+    }
+    .nav-mobile {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.1rem 0 1rem;
+    }
+}
