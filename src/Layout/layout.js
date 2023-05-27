@@ -6,7 +6,7 @@ import Logo from '../Components/logo';
 import DateAndTime from '../Components/Date';
 import useMediaQuery from '../CustomHooks/useMediaQuery';
 import SidebarMobile from '../Mobile/sidebarmobile';
-import '../Mobile/mobilestyle.css';
+import './mobile.css';
 import TimeMobile from '../Mobile/timemobile';
 
 export default function Layout({children}) {
