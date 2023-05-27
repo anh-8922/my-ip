@@ -43,7 +43,7 @@ export default function Info() {
                     <div>
                         <h3>Author:</h3>
                         <p>Anh Chau <a href='https://github.com/anh-8922' target='_blank'>GitHub</a></p>
-                        <p>Lakmani <a href='https://github.com/lranatunga' target='_blank'>GitHub</a></p>
+                        <p>Lakmali Ranatunga <a href='https://github.com/lranatunga' target='_blank'>GitHub</a></p>
                     </div>
 
                 </Modal.Body>
