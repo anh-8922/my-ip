@@ -8,16 +8,18 @@ import './pages.css';
 export default function Home() {
     return(
         <Layout >
+            <div id='map'>
+                <Card >
+                    <Card.Header as="h5">Get Map and IP</Card.Header>
+                    <Card.Body >
+                        <Map/>
+                    </Card.Body>
+                    <Card.Footer style={{textAlign: "center", fontSize: "1.5rem", paddingTop: "0"}}>
+                        Your IP Address is:<span style={{fontSize: "2.5rem"}}><IpAddress/></span>
+                    </Card.Footer>
+                </Card>
+            </div>
             
-            <Card id='map'>
-                <Card.Header as="h5">Get Map and IP</Card.Header>
-                <Card.Body >
-                    <Map/>
-                </Card.Body>
-                <Card.Footer style={{textAlign: "center", fontSize: "1.5rem", paddingTop: "0"}}>
-                    Your IP Address is:<span style={{fontSize: "2.5rem"}}><IpAddress/></span>
-                </Card.Footer>
-            </Card>
 
         </Layout>
         
