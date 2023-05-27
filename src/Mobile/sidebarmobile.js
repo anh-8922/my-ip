@@ -1,7 +1,6 @@
 import {Link } from "react-router-dom";
 import './mobilestyle.css';
 import {ImLocation2} from 'react-icons/im';
-import{AiOutlineMenuUnfold} from 'react-icons/ai';
 import React, { useState } from "react";
 import {AiOutlineGlobal} from 'react-icons/ai';
 import Logo from "../Components/logo";
@@ -11,8 +10,8 @@ export default function SidebarMobile() {
         <>
             <nav id="top-bar">
                 <Logo/>                                                   
-                <Link to="/"  className='nav-items'><ImLocation2 className="icons"/>LOCATION</Link>
-                <Link to="/checkzone"  className="nav-items"><AiOutlineGlobal className="icons"/>COUNTRY</Link>                                                                            
+                <Link to="/"  className='nav-mobile'><ImLocation2 className="nav-icons"/>LOCATION</Link>
+                <Link to="/checkzone"  className="nav-mobile"><AiOutlineGlobal className="nav-icons"/>COUNTRY</Link>                                                                            
             </nav>
             
             

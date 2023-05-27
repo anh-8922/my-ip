@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Map from '../Components/Map';
 import Layout from '../Layout/layout';
 import './pages.css';
+import '../Mobile/mobilestyle.css';
 
 export default function Home() {
     return(
