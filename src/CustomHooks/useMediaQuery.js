@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function useMediaQuery() {
     const [isDesktop, setIsDesktop] = useState(false);
     useEffect(() => {
-        const media = window.matchMedia('(min-width: 786px)');
+        const media = window.matchMedia('(min-width: 902px)');
         const listener = () => setIsDesktop(media.matches);
         listener();
         window.addEventListener('resize', listener);
