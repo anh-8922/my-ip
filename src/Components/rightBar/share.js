@@ -27,8 +27,8 @@ export default function SocialMedia() {
         </Modal.Header>
         <Modal.Body>
                 <div style={{display:'flex', gap:'1rem'}}>
-                   <a href='https://www.facebook.com/sharer/sharer.php?u=https://my-ip-check.vercel.app/' target="_blank" rel="noopener noreferrer"><FacebookShareButton/><FacebookIcon/></a>
-                   <a href='https://www.linkedin.com/shareArticle?url=https://my-ip-check.vercel.app/' target="_blank" rel="noopener noreferrer"><LineShareButton/><LinkedinIcon/> </a>
+                   <a href='https://www.facebook.com/sharer/sharer.php?u=https://your-ip-generator.vercel.app/' target="_blank" rel="noopener noreferrer"><FacebookShareButton/><FacebookIcon/></a>
+                   <a href='https://www.linkedin.com/shareArticle?url=https://your-ip-generator.vercel.app/' target="_blank" rel="noopener noreferrer"><LineShareButton/><LinkedinIcon/> </a>
                </div>
         </Modal.Body>
       </Modal>
