@@ -98,3 +98,37 @@
     height: 50vh;
     width: 100%;
 }
+
+
+
+ /* SHARE */
+
+ /* .social-media-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+  } */
+
+  /* .share-modal {
+    width: 10vw;
+    height: 15vh;
+  }
+   */
+
+  /* .share-buttons {
+    display: flex;
+    gap: 1rem;
+  } */
+
+
+  #share-me{
+    /* display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    position: relative; */
+    top:80%;
+    margin-left:50rem;
+  }
+  
+

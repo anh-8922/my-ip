@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 import '../css/styles.css';
 import Modal from 'react-bootstrap/Modal';
 import {BsPersonCircle} from 'react-icons/bs';
-// import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -13,9 +12,7 @@ export default function Contact() {
     
     const [logContact, setLogContact] = useState(true)
     const [show, setShow] = useState(false);
-    // const [name, setName] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [message, setMessage] = useState ('')
+    const [messageStatus, setMessageStatus] = useState('');
 
     function handleShow(breakpoint) {
         setLogContact(breakpoint);
@@ -28,18 +25,13 @@ export default function Contact() {
         emailjs.sendForm(`${YOUR_SERVICE_ID}`, `${YOUR_TEMPLATE_ID}`, form.current, `${YOUR_PUBLIC_KEY}`)
           .then((result) => {
               console.log(result.text);
+              setMessageStatus('Message Sent');
           }, (error) => {
               console.log(error.text);
           });
           form.current.reset()
       };
 
-    // const handleClick = () =>{
-    //     setName(name)
-    //     setEmail(email)
-    //     setMessage(message)
-    //     console.log(name,email,message)
-    // }
     return (
         <>
             <BsPersonCircle className='tool-items'   onClick={handleShow} />
@@ -78,6 +70,20 @@ export default function Contact() {
                     </form>
                 </Modal.Body>
             </Modal>
+            {/* {messageStatus && <Modal show={show} 
+                   fullscreen={logContact} 
+                   onHide={() => setShow(false)} 
+                   id="info-screen" 
+                //    style={{width:'50rem', height:'30rem', margin:'5rem'}}
+                   >
+                <Modal.Header closeButton>
+                <Modal.Title>Reach Us</Modal.Title>
+                </Modal.Header>
+                <Modal.Body style={{display:'flex'}}>
+               
+                <div>{messageStatus}</div>
+                </Modal.Body>
+            </Modal>} */}
         </>
     )
 }
