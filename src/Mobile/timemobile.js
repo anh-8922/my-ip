@@ -17,12 +17,13 @@ export default function TimeMobile(props) {
 
   return (
       <div className="mobile-time">
-        <div>
-          {DateTime.now().toFormat("HH':'mm ",data.time_zone.current_time)}<br/>
-          <span>{DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</span>
+        <div id="time-block">
+          <p id="time">{DateTime.now().toFormat("HH':'mm ",data.time_zone.current_time)}</p>
+         
         </div>
                         
-        <div>
+        <div id="time-info">
+          Date: <span>{DateTime.now().toFormat('MM-dd-yyyy',data.time_zone.current_time)}</span><br/>
           GMT Time: <span>{currentGMTTime.toFormat("HH:mm")}</span><br/>
           Zone Name: <span>{data.time_zone.name}</span><br/>
           Time Zone: <span>{data.time_zone.offset}</span>

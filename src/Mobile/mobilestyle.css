@@ -22,36 +22,26 @@
   width: 70%;
   border-radius: 1rem;
   margin: 1rem;
-  padding: 1rem;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 5px solid beige;
   border-style: inset;
-}
-#time-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: auto;
-    width: 15rem;
-    
+  padding: 0.3rem;
 }
 
+#time-info {
+    font-size: 0.8rem;
+}
 #time {
-    font-size: 3rem;
-    color: var(--dark-sienna);
+    margin: 0;
+    font-size: 3.5rem;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: 800;
-    
 }
-#time > span {
-    font-size: 1.5rem;
-    color: var(--dark-sienna);
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: 800;
-    padding: 0;
-}
+
+
 @media only screen and (max-width:786px) {
     #main{
         display: flex;
@@ -106,4 +96,46 @@
     
  
    
+}
+
+@media only screen and (max-width:584px) {
+    #logo {
+        font-size: 1.8rem;
+    }
+    .nav-mobile {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:536px) {
+    #logo {
+        font-size: 1.7rem;
+    }
+    .nav-mobile {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.3rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width:443px) {
+    #logo {
+        font-size: 1.6rem;
+    }
+    .nav-mobile {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    #logo {
+        font-size: 1.2rem;
+    }
+    .nav-mobile {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+        margin: 0.5rem 0.1rem 0 1rem;
+    }
 }
