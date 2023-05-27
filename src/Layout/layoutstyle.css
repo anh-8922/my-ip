@@ -110,3 +110,10 @@ nav {
 .tool-items:hover{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 950px){
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+}

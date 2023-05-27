@@ -8,7 +8,7 @@ export default function useMediaQUery(query) {
         if (media.match !== match) {
             setMatch(media.match);
         }
-        const listener = () => setMatch(meida.match);
+        const listener = () => setMatch(media.match);
         window.addEventListener("resize", listener);
         return() => window.removeEventListener("resize", listener)
     }, [match, query]);
