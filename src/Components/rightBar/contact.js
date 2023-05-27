@@ -13,6 +13,7 @@ export default function Contact() {
     const [logContact, setLogContact] = useState(true)
     const [show, setShow] = useState(false);
     const [messageStatus, setMessageStatus] = useState('');
+    
 
     function handleShow(breakpoint) {
         setLogContact(breakpoint);
@@ -26,6 +27,7 @@ export default function Contact() {
           .then((result) => {
               console.log(result.text);
               setMessageStatus('Message Sent');
+              console.log(messageStatus)
           }, (error) => {
               console.log(error.text);
           });
@@ -70,20 +72,9 @@ export default function Contact() {
                     </form>
                 </Modal.Body>
             </Modal>
-            {/* {messageStatus && <Modal show={show} 
-                   fullscreen={logContact} 
-                   onHide={() => setShow(false)} 
-                   id="info-screen" 
-                //    style={{width:'50rem', height:'30rem', margin:'5rem'}}
-                   >
-                <Modal.Header closeButton>
-                <Modal.Title>Reach Us</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={{display:'flex'}}>
-               
-                <div>{messageStatus}</div>
-                </Modal.Body>
-            </Modal>} */}
+            {messageStatus && alert (messageStatus)
+
+          }
         </>
     )
 }
